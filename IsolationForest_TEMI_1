@@ -40,4 +40,5 @@ accuracy_n = (count-list(df_train['anomaly_score']).count(-1))/count*100
 #accuracy = 100*list(df_train['anomaly_score']).count(-1)/(anomaly_count)
 print("Accuracy of the model(in_anomaly):", accuracy_a)
 print("Accuracy of the model(in_normal):", accuracy_n)
-print(list(df_train['anomaly_score']).count(-1))
+print("Anomaly count:",list(df_train['anomaly_score']).count(-1))
+print("count:",df_train.shape[0])
